@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline Automatizada</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; width: 100%; row-gap: 1rem; font-family: Georgia, 'Times New Roman', Times, serif;">
+        <h1 style="font-size: 3rem;">Pipeline Automatizada</h1>
+        <img id="emoji-feliz" style="display: none;" src="./src/img/emoji-feliz.png" alt="Emoji amarelo fazendo sinal de beleza." />
+        <img id="emoji-triste" src="./src/img/emoji-triste.png" alt="Emoji amarelo fazendo de tristeza." />
+        <button id="button-feliz" onclick="toggleDisplay('emoji-triste', 'emoji-feliz', 'button-feliz', 'button-triste' )" style="font-size: 1.5rem; cursor: pointer;">Mude o Humor do Godofredo!</button>
+        <button id="button-triste" onclick="toggleDisplay('emoji-feliz', 'emoji-triste', 'button-triste', 'button-feliz' )" style="font-size: 1.5rem; cursor: pointer; display: none;">Mude o Humor do Godofredo!</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
